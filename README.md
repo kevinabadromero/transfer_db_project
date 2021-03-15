@@ -27,10 +27,6 @@ to see the forum scrapping output, take a look to localhost:8000/forum
 
 for start a clean webscrap of the web site you have to run, | py injection.py (it cleans the table named Article)
 
-For do the web srapping, you have to know the specific number on post finish, if in your forum, the last topic are in url represented as 
+For do the web srapping, you have to run | py webscrap.py
 
-http://www.naczyniaki.pl/viewtopic.php?t=6000 
-
-as example, cause i don't know which is the last topic...
-
-you have to go 
+it script will go to every post in website and clone it in db, you have to be pacient for it to end
