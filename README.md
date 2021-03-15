@@ -3,7 +3,13 @@
 2]cd to transfer_db_project
 
 First, you need to solve install all dependencies
-
+      *pip install django
+      *pip install bs4
+      *pip install requests_html
+      *pip install os
+      
+      
+      
 in terminal or mysql console (i'm using mariadb) type this
 --> CREATE DATABASE phpbb;
 --> CONNECT phpbb;
