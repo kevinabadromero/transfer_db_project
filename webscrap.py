@@ -7,7 +7,7 @@ django.setup()
 from app.models import Article
 i = 10
 session = HTMLSession()
-while i<11:
+while i<6676:
 
     i = i+1
     o = str(i)
