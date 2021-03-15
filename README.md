@@ -18,4 +18,19 @@ you have to configure your Database settings, in it model i'm using mysql and my
     * hola123 <-- password
     * phpbb <-- Database Name
 
-#Note: you can change this credentials in project-folder/app_rama/settings.py at the line 
+#Note: you can change this credentials in project-folder/app_rama/settings.py at the line 83 -to- 91
+once configured, you don't need to do anything more.
+
+to see the album output, take a look to localhost:8000
+
+to see the forum scrapping output, take a look to localhost:8000/forum
+
+for start a clean webscrap of the web site you have to run, | py injection.py (it cleans the table named Article)
+
+For do the web srapping, you have to know the specific number on post finish, if in your forum, the last topic are in url represented as 
+
+http://www.naczyniaki.pl/viewtopic.php?t=6000 
+
+as example, cause i don't know which is the last topic...
+
+you have to go 
