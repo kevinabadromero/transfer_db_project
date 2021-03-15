@@ -1,0 +1,39 @@
+
+<html>
+    <head>
+      <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+      <title>A Simple table db _ importing</title>
+      <link rel="stylesheet" href="//cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+      <script src="//cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+      
+    </head>
+  <table class="mytable" border="1">
+    <caption></caption>
+    <tbody>
+    <tr>
+      <th>User Name</th>
+      <th>Content</th>
+      <th>Category</th>
+      <th>Sub Category</th>
+      <th>Topic</th>
+      
+      </tr>        
+    {%for b in posts%}
+      <tr>
+        <td>{{b.user_name}}</td>
+        <td>{{b.content}}</td>
+        <td>{{b.category}}</td>
+        <td>{{b.sub_category}}</td>
+        <td>{{b.title}}</td>
+      </tr>    
+    {%endfor%}
+    </tbody>
+  </table>
+  <script>
+    $(document).ready( function () {
+      $('.mytable').DataTable();
+  } );
+  </script>
