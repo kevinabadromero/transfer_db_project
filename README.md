@@ -3,10 +3,11 @@
 2]cd to transfer_db_project
 
 First, you need to solve install all dependencies
-  pip install django
-  pip install bs4
-  pip install requests_html
-  pip install os
+
+pip install django
+pip install bs4
+pip install requests_html
+pip install os
       
       
       
