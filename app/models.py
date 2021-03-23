@@ -8,7 +8,17 @@ class Article(models.Model):
     category = models.CharField(max_length=200, blank=True)
     sub_category = models.CharField(max_length=200, blank=True)
 
+class Answer(models.Model):
+    owner = models.TextField()
+    quote = models.TextField()
+    anspost = models.TextField()
+    title = models.TextField()
+    category = models.TextField()
+    sub_category = models.TextField()
 
+class topics(models.Model):
+    topic = models.TextField()
+#makemigrations >>>> migrate
 class PhpbbAlbum(models.Model):
     pic_id = models.AutoField(primary_key=True)
     pic_filename = models.CharField(max_length=255)

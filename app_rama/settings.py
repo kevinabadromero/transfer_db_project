@@ -80,17 +80,24 @@ WSGI_APPLICATION = 'app_rama.wsgi.application'
 #
 #
 
-DATABASES = {
+#DATABASES = {
     
-    'default':{
-        'NAME': 'phpbb',
-        'ENGINE': 'django.db.backends.mysql',
-        'USER': 'kevin',
-        'PASSWORD': 'hola123',
-        'HOST': '127.0.0.1',
+#    'default':{
+ #       'NAME': 'phpbb',
+  #      'ENGINE': 'django.db.backends.mysql',
+   #     'USER': 'kevin',
+   #     'PASSWORD': '1234',
+  #      'HOST': '127.0.0.1',
+ #   }
+
+
+#}
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-
-
 }
 
 

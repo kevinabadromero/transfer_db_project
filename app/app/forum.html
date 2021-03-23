@@ -8,7 +8,7 @@
       <title>A Simple table db _ importing</title>
       <link rel="stylesheet" href="//cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
       <script src="//cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
-      
+      <meta charset="iso-8859-2"
     </head>
   <table class="mytable" border="1">
     <caption></caption>
@@ -16,6 +16,8 @@
     <tr>
       <th>User Name</th>
       <th>Content</th>
+      <th>Answered to</th>
+      <th>Qoute</th>
       <th>Category</th>
       <th>Sub Category</th>
       <th>Topic</th>
@@ -25,6 +27,20 @@
       <tr>
         <td>{{b.user_name}}</td>
         <td>{{b.content}}</td>
+        <td>
+          {%for a in answers%}
+          {%if b.content == a.anspost%}
+          {{a.owner}}
+          {%endif%}
+          {%endfor%}
+        </td>
+        <td>
+          {%for a in answers%}
+          {%if b.content == a.anspost%}
+          {{a.quote}}
+          {%endif%}
+          {%endfor%}
+        </td>
         <td>{{b.category}}</td>
         <td>{{b.sub_category}}</td>
         <td>{{b.title}}</td>
